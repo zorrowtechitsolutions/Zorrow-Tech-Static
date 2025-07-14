@@ -12,8 +12,8 @@ const Hero = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
           >
-            <h1 className="text-4xl md:text-6xl font-bold text-primary mb-6">
-              Innovative Tech Solutions for the Future
+            <h1 className="text-3xl md:text-5xl font-bold text-primary mb-6">
+              INNOVATIVE TECH SOLUTIONS FOR FUTURE
             </h1>
             <p className="text-lg text-gray-600 mb-8">
               Empowering businesses with cutting-edge technology solutions and

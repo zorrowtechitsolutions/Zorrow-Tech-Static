@@ -20,12 +20,16 @@ const Navbar = () => {
           <Link to="/" className="flex items-center space-x-4">
             <div className="flex items-center">
               <img
-                src="./logo1.png"
+                src="./logo.png"
                 alt="Zorrow Tech Logo"
-                className="h-12 w-auto"
+                className="h-20 w-auto"
               />
-              <span className="text-4xl font-oswald font-semibold text-primary ml-3 mb-3">
-                zorrow tech
+              <span className="flex items-center">
+                <img
+                  src="./text.png"
+                  alt="Company name"
+                  className="h-52 w-auto mt-1"
+                />
               </span>
             </div>
           </Link>
