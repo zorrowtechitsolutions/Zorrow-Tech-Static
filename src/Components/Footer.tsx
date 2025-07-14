@@ -15,21 +15,28 @@ const Footer = () => {
         <div className="">
           {/* Logo and Description */}
           <div className=" w-full">
-            <div className="flex items-center mb-4 justify-center">
+            <div className="flex items-center justify-center">
               <img
-                src="./logo1.png"
+                src="./logo.png"
                 alt="Zorrow Tech Logo"
                 className="h-10 w-auto"
               />
-              <span className="text-xl font-oswald font-bold text-primary ml-3">
+              {/* <span className="text-xl font-oswald font-bold text-primary ml-3">
                 ZORROW TECH
+              </span> */}
+              <span>
+                <img
+                  src="./text.png"
+                  alt="Zorrow Tech Text"
+                  className="h-32 w-auto mt-1"
+                />
               </span>
             </div>
             <p className="text-sm mb-4 flex justify-center text-center">
               Innovative Tech Solutions for the Future. Empowering businesses
               with cutting-edge technology solutions and expert IT services.
             </p>
-            <div className="flex space-x-4 justify-center mt-8">
+            <div className="flex space-x-4 justify-center mt-2">
               <a
                 href="tel:+919400517720"
                 className="text-gray-400 hover:text-primary transition-colors"
