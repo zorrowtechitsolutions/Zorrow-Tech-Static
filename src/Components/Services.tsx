@@ -49,7 +49,7 @@ const services = [
 
 const Services = () => {
   return (
-    <section id="services" className="section bg-transparent pt-32">
+    <section id="services" className="section bg-transparent pt-1">
       <div className="container">
         <motion.div
           initial={{ opacity: 0, y: 20 }}

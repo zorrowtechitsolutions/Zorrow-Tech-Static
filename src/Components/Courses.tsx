@@ -35,7 +35,7 @@ const courses = [
 
 const Courses = () => {
   return (
-    <section className="pt-32 pb-20 bg-transparent">
+    <section className="pt-1 bg-transparent">
       <div className="container mx-auto px-4">
         <h1 className="text-4xl font-bold text-primary mb-8 text-center">
           Our Courses
