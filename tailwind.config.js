@@ -7,18 +7,20 @@ export default {
   theme: {
     extend: {
       colors: {
-        primary: {
-          DEFAULT: '#4A3728', // Brown from logo
-          light: '#6B5141',
-          dark: '#2A1F17',
+         primary: {
+          DEFAULT: '#000000', // Black
+          light: '#222222',   // Slightly lighter black
+          dark: '#000000',    // Pure black
         },
         secondary: {
-          DEFAULT: '#D4C4B7', // Gold/beige from logo
-          light: '#E8DFD7',
-          dark: '#B3A194',
+          DEFAULT: '#FFFFFF', // White
+          light: '#F5F5F5',   // Off-white
+          dark: '#CCCCCC',    // Silver/gray
         },
-        custom: '#DBCDC0',
-        custom1:'#E2D8CF'
+        silver: '#C0C0C0',     // Classic silver
+        custom: '#E5E5E5',     // Light gray for backgrounds
+        custom1: '#F8F8F8'     // Very light gray
+     
       },
       fontFamily: {
         sans: ['Inter', 'sans-serif'],

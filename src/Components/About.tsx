@@ -13,11 +13,14 @@ const About = () => {
             viewport={{ once: true }}
             className="lg:w-1/2"
           >
-            <img
-              src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=800&q=80"
-              alt="Team collaboration"
-              className="rounded-lg shadow-2xl"
-            />
+            <div className="relative overflow-hidden">
+              <img
+                src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=800&q=80"
+                alt="Team collaboration"
+                className="rounded-lg shadow-2xl"
+              />
+              <div className="absolute top-0 left-0 w-full h-full bg-black opacity-40 rounded-lg"></div>
+            </div>
           </motion.div>
 
           <motion.div
