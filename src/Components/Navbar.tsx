@@ -39,7 +39,7 @@ const Navbar = () => {
             {navItems.map((item) => (
               <a
                 href={item.path}
-                className="text-gray-700 hover:text-primary font-medium transition-colors"
+                className="text-primary hover:text-white font-medium transition-colors"
               >
                 {item.name}
               </a>

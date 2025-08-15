@@ -34,11 +34,14 @@ const Hero = () => {
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
           >
-            <img
-              src="https://images.unsplash.com/photo-1553877522-43269d4ea984?auto=format&fit=crop&w=800&q=80"
-              alt="Tech Innovation"
-              className="rounded-lg shadow-2xl"
-            />
+            <div className="relative overflow-hidden">
+              <img
+                src="https://images.unsplash.com/photo-1553877522-43269d4ea984?auto=format&fit=crop&w=800&q=80"
+                alt="Tech Innovation"
+                className="rounded-lg shadow-2xl"
+              />
+              <div className="absolute top-0 left-0 w-full h-full bg-black opacity-40 rounded-lg"></div>
+            </div>
           </motion.div>
         </div>
       </div>
