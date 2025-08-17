@@ -56,6 +56,7 @@ const Footer = () => {
               with cutting-edge technology solutions and expert IT services.
             </p>
             <div className="flex space-x-4 justify-center mt-2">
+
               {contactLinks.map((link, index) => (
                 <a
                   key={index}
@@ -66,6 +67,7 @@ const Footer = () => {
                   {link.icon}
                 </a>
               ))}
+
             </div>
           </div>
         </div>
