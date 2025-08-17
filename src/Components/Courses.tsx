@@ -1,4 +1,5 @@
 import { BookOpen, Award, Clock, Users } from "lucide-react";
+import { motion } from "framer-motion";
 
 const courses = [
   {
@@ -35,28 +36,38 @@ const courses = [
 
 const Courses = () => {
   return (
-    <section className="pt-1 bg-transparent">
+    <section className="pt-1 bg-transparent section">
       <div className="container mx-auto px-4">
-        <h1 className="text-4xl font-bold text-primary mb-8 text-center">
-          Our Courses
-        </h1>
-        <p className="text-gray-600 text-center max-w-2xl mx-auto mb-12">
-          Enhance your skills with our industry-focused courses and
-          government-certified programs.
-        </p>
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+          viewport={{ once: true }}
+          className="text-center mb-16"
+        >
+          <h2 className="text-4xl font-bold text-secondary-light mb-4">
+            Our Courses
+          </h2>
+          <p className="text-custom max-w-2xl mx-auto">
+            Enhance your skills with our industry-focused courses and
+            government-certified programs.
+          </p>
+        </motion.div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-2 gap-8">
           {courses.map((course, index) => (
             <div
               key={index}
-              className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow"
+              className="bg-primary-light p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow"
             >
-              <course.icon className="w-12 h-12 text-primary mb-4" />
-              <h3 className="text-xl font-bold text-primary mb-2">
-                {course.title}
-              </h3>
-              <p className="text-gray-600 mb-4">{course.description}</p>
-              <div className="flex items-center justify-between text-sm text-gray-500">
+              <div className="flex items-center mb-6">
+                <course.icon className="w-12 h-12 text-secondary-light" />
+                <h3 className="text-xl font-bold text-secondary-light ms-4">
+                  {course.title}
+                </h3>
+              </div>
+              <p className="text-secondary-light mb-2">{course.description}</p>
+              <div className="flex items-center justify-between text-sm text-custom">
                 <span>Duration: {course.duration}</span>
                 <span>Level: {course.level}</span>
               </div>

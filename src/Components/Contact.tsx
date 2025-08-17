@@ -1,13 +1,22 @@
 import { Mail, Phone, MapPin } from "lucide-react";
+import { motion } from "framer-motion";
 
 const Contact = () => {
   return (
-    <section className="pt-32 bg-transparent">
+    <section className="pt-1 bg-transparent">
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto">
-          <h1 className="text-4xl font-bold text-primary mb-8 text-center">
-            Contact Us
-          </h1>
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+            viewport={{ once: true }}
+            className="text-center mb-16"
+          >
+            <h2 className="text-4xl font-bold text-secondary-light mb-4">
+              Contact Zorrow Tech
+            </h2>
+          </motion.div>
 
           <div className="grid md:grid-cols-3 gap-2 items-center">
             {/* Contact Information */}

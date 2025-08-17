@@ -9,7 +9,7 @@ import Courses from "./Components/Courses";
 
 function App() {
   return (
-    <div className="min-h-screen bg-gradient-to-b from-custom1 to-white h-screen overflow-auto">
+    <div className="min-h-screen bg-gray-950 h-screen overflow-auto">
       <BrowserRouter>
         <div>
           <Navbar />
