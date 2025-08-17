@@ -8,9 +8,42 @@ import {
   Youtube,
 } from "lucide-react";
 
+const contactLinks = [
+  {
+    href: "tel:+919400517720",
+    icon: <PhoneCallIcon size={20} />,
+  },
+  {
+    href: "https://mail.google.com/mail/?view=cm&fs=1&to=zorrowtech@gmail.com",
+    icon: <Mail size={20} />,
+    target: "_blank",
+  },
+  {
+    href: "https://wa.me/9400517720",
+    icon: <MessageCircle size={20} />,
+    target: "_blank",
+  },
+  {
+    href: "https://www.facebook.com/profile.php?id=61573552041382",
+    icon: <Facebook size={20} />,
+  },
+  {
+    href: "https://www.instagram.com/zorrowtechitsolutions/",
+    icon: <Instagram size={20} />,
+  },
+  {
+    href: "#",
+    icon: <Linkedin size={20} />,
+  },
+  {
+    href: "https://www.youtube.com/@ZorrowTech",
+    icon: <Youtube size={20} />,
+  },
+];
+
 const Footer = () => {
   return (
-    <footer className="bg-transparent text-gray-600">
+    <footer className="bg-transparent text-custom">
       <div className="container mx-auto py-12 px-4">
         <div className="">
           {/* Logo and Description */}
@@ -23,54 +56,20 @@ const Footer = () => {
               with cutting-edge technology solutions and expert IT services.
             </p>
             <div className="flex space-x-4 justify-center mt-2">
-              <a
-                href="tel:+919400517720"
-                className="text-gray-400 hover:text-primary transition-colors"
-              >
-                <PhoneCallIcon size={20} />
-              </a>
-              <a
-                href="https://mail.google.com/mail/?view=cm&fs=1&to=zorrowtech@gmail.com"
-                target="_blank"
-                className="text-gray-400 hover:text-primary transition-colors"
-              >
-                <Mail size={20} />
-              </a>
-              <a
-                href="https://wa.me/9400517720"
-                target="_blank"
-                className="text-gray-400 hover:text-primary transition-colors"
-              >
-                <MessageCircle size={20} />
-              </a>
-              <a
-                href="https://www.facebook.com/profile.php?id=61573552041382"
-                className="text-gray-400 hover:text-primary transition-colors"
-              >
-                <Facebook size={20} />
-              </a>
-              <a
-                href="https://www.instagram.com/zorrowtechitsolutions/"
-                className="text-gray-400 hover:text-primary transition-colors"
-              >
-                <Instagram size={20} />
-              </a>
-              <a
-                href="#"
-                className="text-gray-400 hover:text-primary transition-colors"
-              >
-                <Linkedin size={20} />
-              </a>
-              <a
-                href="https://www.youtube.com/@ZorrowTech"
-                className="text-gray-400 hover:text-primary transition-colors"
-              >
-                <Youtube size={20} />
-              </a>
+              {contactLinks.map((link, index) => (
+                <a
+                  key={index}
+                  href={link.href}
+                  target={link.target || "_self"}
+                  className="text-custom hover:text-secondary-light transition-colors"
+                >
+                  {link.icon}
+                </a>
+              ))}
             </div>
           </div>
         </div>
-        <div className="border-t border-gray-200 mt-8 pt-8 text-center text-sm">
+        <div className="border-t-2 border-custom mt-8 pt-2 text-center text-sm">
           <p>
             © {new Date().getFullYear()} Zorrow Tech IT Solutions. All rights
             reserved.
