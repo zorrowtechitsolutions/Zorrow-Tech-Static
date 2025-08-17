@@ -18,7 +18,7 @@ export default {
           dark: '#CCCCCC',    // Silver/gray
         },
         silver: '#C0C0C0',     // Classic silver
-        custom: '#E5E5E5',     // Light gray for backgrounds
+        custom: '#cbd5e0',     // Light gray for motos and descriptions
         custom1: '#F8F8F8'     // Very light gray
      
       },

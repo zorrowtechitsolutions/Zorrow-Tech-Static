@@ -14,7 +14,7 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className="bg-custom shadow-md fixed w-full z-50 pt-1">
+    <nav className="bg-gray-300 shadow-md fixed w-full z-50 pt-1">
       <div className="container mx-auto px-4">
         <div className="flex justify-between items-center h-20">
           <Link to="/" className="flex items-center space-x-4">
@@ -39,7 +39,7 @@ const Navbar = () => {
             {navItems.map((item) => (
               <a
                 href={item.path}
-                className="text-primary hover:text-white font-medium transition-colors"
+                className="text-primary-light hover:text-primary-dark hover:font-bold font-medium transition-colors"
               >
                 {item.name}
               </a>

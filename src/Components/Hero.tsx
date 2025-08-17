@@ -12,19 +12,18 @@ const Hero = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
           >
-            <h1 className="text-3xl md:text-5xl font-bold text-primary mb-6">
+            <h1 className="text-3xl md:text-5xl font-bold text-secondary-light mb-6">
               INNOVATIVE TECH SOLUTIONS FOR FUTURE
             </h1>
-            <p className="text-lg text-gray-600 mb-8">
+            <p className="text-lg text-custom mb-8">
               Empowering businesses with cutting-edge technology solutions and
               expert IT services. Your success is our priority.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
-              <button className="btn btn-primary flex items-center justify-center gap-2">
+              <button className="btn btn-primary bg-primary-light text-secondary-light flex items-center justify-center gap-2">
                 Get Started
                 <ArrowRight size={20} />
               </button>
-              <button className="btn btn-secondary">Learn More</button>
             </div>
           </motion.div>
 
