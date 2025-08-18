@@ -54,11 +54,11 @@ const Courses = () => {
           </p>
         </motion.div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-2 gap-8">
+        <div className="flex flex-col md:flex-row md:flex-wrap md:gap-8">
           {courses.map((course, index) => (
             <div
               key={index}
-              className="bg-primary-light p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow"
+              className="bg-primary-light p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow mb-8 md:mb-0 md:w-[48%] lg:w-[48%]"
             >
               <div className="flex items-center mb-6">
                 <course.icon className="w-12 h-12 text-secondary-light" />
