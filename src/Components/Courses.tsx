@@ -37,7 +37,7 @@ const courses = [
 const Courses = () => {
   return (
     <section className="pt-1 bg-transparent section">
-      <div className="container mx-auto px-4">
+      <div className="container mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
